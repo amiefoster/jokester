@@ -2,12 +2,14 @@ import React from 'react'
 import { NavLink } from "react-router-dom"
 
 const linkStyles = {
-    display: "inline-block",
-    padding: "12px",
-    margin: "10px 10px 10px",
-    background: "hotpink",
+    display: "flex",
+    padding: "10px",
+    margin: "5px 5px 5px",
+    background: "#38B6FF",
     textDecoration: "none",
-    color: "white",
+    color: "white", 
+    justifyContent: "center",
+    textAlign: "center"
     
   };
 
@@ -21,7 +23,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "hotpink",
+              background: "#233DFF",
             }}
             >
               Home
@@ -32,7 +34,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "hotpink",
+              background: "#233DFF",
             }}
             >
                 Jokes
@@ -43,7 +45,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "hotpink",
+              background: "#233DFF",
             }}
             >
               Create Joke 
