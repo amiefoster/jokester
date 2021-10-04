@@ -12,7 +12,7 @@ function SubmitJoke() {
 
   return (
     <div>
-      <h3>So, you think your're funny?</h3>
+      <h3>So, you think your're funny? 🤪</h3>
       <h4>Submit Your Own Joke Here!</h4>
 
       <section className="joke-submit">
