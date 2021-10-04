@@ -1,8 +1,11 @@
+import logo from "../images/Jokester.gif"
 function Home() {
     return(
         <div>
-            <h1>Jokester</h1>
-            <h4>Hi welcome to Jokester!</h4>
+            <h3>Hi 👋  welcome to Jokester!</h3>
+            <img src={logo} />
+            
+            
         </div>
     )
 
