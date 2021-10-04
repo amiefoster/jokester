@@ -2,8 +2,7 @@ import React from 'react'
 
 function JokeFilter() {
     return (
-        <div>
-            
+       <div>
         </div>
     )
 }

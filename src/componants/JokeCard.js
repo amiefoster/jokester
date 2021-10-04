@@ -6,7 +6,7 @@ function JokeCard(  {category, setup, delivery} ) {
         <div className="joke-card">
             <h3>{setup}</h3>
             <h5>{delivery}</h5>
-            <p>{category}</p>
+            <p>#{category}</p>
             
         </div>
     )
