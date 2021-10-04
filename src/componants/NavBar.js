@@ -2,14 +2,14 @@ import React from 'react'
 import { NavLink } from "react-router-dom"
 
 const linkStyles = {
-    display: "flex",
-    padding: "10px",
-    margin: "5px 5px 5px",
-    background: "#38B6FF",
+    padding: "10px 20px 10px 20px",
+    margin: "10px 10px 10px 10px",
+    background: "#c60112",
     textDecoration: "none",
     color: "white", 
     justifyContent: "center",
-    textAlign: "center"
+    textAlign: "center",
+    borderRadius: "8px",
     
   };
 
@@ -17,13 +17,14 @@ const linkStyles = {
 function NavBar() {
     return (
         
-            <div>
+            <div className="nav-bar">
           <NavLink 
             to="/"
             exact
             style={linkStyles}
             activeStyle={{
-              background: "#233DFF",
+              background: "rgb(198,1,18)",
+              
             }}
             >
               Home
@@ -48,7 +49,7 @@ function NavBar() {
               background: "#233DFF",
             }}
             >
-              Create Joke 
+              Create
             </NavLink>
 
         </div>
