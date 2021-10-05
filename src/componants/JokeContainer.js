@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import JokeCard from './JokeCard'
 
+
 function JokeContainer({addJoke}) {
     const [jokes, setJokes] = useState([])
 
@@ -20,6 +21,7 @@ function JokeContainer({addJoke}) {
       }
     }
 }
+
 
     return (
         <div className="joke-container">   

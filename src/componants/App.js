@@ -1,3 +1,4 @@
+
 import React,{ useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -8,9 +9,10 @@ import SubmitJoke from "./SubmitJoke"
 function App() {
   const [addJoke, setAddJoke] = useState()
 
-const sendNewJoke = (newJoke) => {
-  setAddJoke(newJoke)
-};
+
+  function addNewJoke(newJoke) {
+    setAddJoke(newJoke)
+  }
 
   return (
     <div>
