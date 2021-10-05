@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 function SubmitJoke({sendNewJoke}) {
 
   const [formData, setFormData] = useState({
@@ -47,14 +46,15 @@ function SubmitJoke({sendNewJoke}) {
 
       <section className="joke-submit">
         <h3>Add Joke</h3>
-        <form>
+        <form className="joke-form">
           <label>
             {"Setup:  "}
             <textarea
               type="text"
               name="setup"
               placeholder="Setup"
-              rows={5}
+              rows={3}
+              cols={40}
               value={formData.setup}
               onChange={handleChange}
             />
@@ -66,7 +66,8 @@ function SubmitJoke({sendNewJoke}) {
               type="text"
               name="delivery"
               placeholder="Delivery"
-              rows={5}
+              rows={3}
+              cols={40}
               value={formData.delivery}
               onChange={handleChange}
             />
@@ -85,6 +86,7 @@ function SubmitJoke({sendNewJoke}) {
             className="add-joke-button"
             type="submit"
             onClick={handleSubmit}
+        
           >
             Add Joke
           </button>
