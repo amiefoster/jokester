@@ -25,7 +25,9 @@ function addJoke() {
 }
 
     return (
-        <div className="joke-container">   
+        <div 
+          className="joke-container"
+          className="card-grid">   
              {jokes.map((joke) => {
                 return <JokeCard 
                     key={joke.id} 

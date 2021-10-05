@@ -1,12 +1,21 @@
-import React from 'react'
+import {React, useState} from 'react'
 
 function JokeCard(  {category, setup, delivery} ) {
-    console.log(category, setup, delivery)
+    const [flip, setFlip] = useState(false)
+
     return (
-        <div className="joke-card">
-            <h3>{setup}</h3>
-            <h5>{delivery}</h5>
-            <p>#{category}</p>
+        <div 
+            className={`card ${flip ? 'flip' : ''}`}
+            onClick={() => setFlip(!flip)}>
+                {/* {flip ? delivery : null}    */}
+            <div className="front">
+                <h3>{setup}</h3>
+                <p>#{category}</p>
+            </div>
+            
+            <div className="back">
+                <h5>{delivery}</h5>
+            </div>
             
         </div>
     )
