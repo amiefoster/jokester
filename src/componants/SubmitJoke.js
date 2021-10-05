@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SubmitJoke() {
+
+  const [formData, setFormData] = useState({
+    "category": "",
+     "setup": "",
+     "delivery": "",
+  })
+  
+
   function handleChange(event) {
-    console.log(event.target.value);
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("this button was clicked!");
+  fetch('http://localhost:8000/jokes',{
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      "setup": formData.setup,
+      "delivery":formData.delivery,
+      "category": formData.category
+    })
+  }).then(response => response.json())
+    .then(newJoke => console.log(newJoke));
   }
 
   return (
@@ -19,30 +41,36 @@ function SubmitJoke() {
         <h3>Add Joke</h3>
         <form>
           <label>
-            Setup:
+            {"Setup:  "}
             <textarea
               type="text"
               name="setup"
               placeholder="Setup"
               rows={5}
+              value={formData.setup}
               onChange={handleChange}
             />
           </label>
           <br />
           <label>
-            Punchline:
+            {"Delivery:  "}
             <textarea
               type="text"
-              name="punchline"
-              placeholder="Punchline"
+              name="delivery"
+              placeholder="Delivery"
               rows={5}
+              value={formData.delivery}
               onChange={handleChange}
             />
           </label>
           <br />
           <label>
-            Category:
-            <input type="text" name="category" onChange={handleChange} />
+            {"Category:  "}
+            <input 
+            type="text" 
+            name="category" 
+            value={formData.category}
+            onChange={handleChange} />
           </label>
           <br />
           <button

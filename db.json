@@ -89,6 +89,18 @@
       "setup": "What happens when you witness a ship wreck?",
       "delivery": "You let it sink in.",
       "id": 15
+    },
+    {
+      "category": "",
+      "setup": "sha\n\n",
+      "delivery": "",
+      "id": 16
+    },
+    {
+      "category": "sss",
+      "setup": "sha\n\n",
+      "delivery": "",
+      "id": 17
     }
   ]
 }

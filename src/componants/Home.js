@@ -4,7 +4,7 @@ function Home() {
         <div>
             <br/>
             <h3>Hi 👋  welcome to Jokester!</h3>
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
             
             
         </div>
