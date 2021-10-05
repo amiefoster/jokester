@@ -1,10 +1,11 @@
 import logo from "../images/jokester-logo.gif"
+import logo2 from "../images/sillyGoose.gif"
 function Home() {
     return(
         <div>
             <br/>
             <h3>Hi 👋  welcome to Jokester!</h3>
-            <img src={logo} alt="logo"/>
+            <img src={logo2} alt="logo"/>
             
             
         </div>

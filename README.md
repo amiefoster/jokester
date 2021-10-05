@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
-json-server --watch db.json --port 8000
+
+
+# Run this to launch local db.json on port 8000
+`json-server --watch db.json --port 8000`
+
+# then run this in your project directory to open in your browser
+`npm start`
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

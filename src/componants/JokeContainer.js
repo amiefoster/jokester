@@ -14,14 +14,15 @@ function JokeContainer({addJoke}) {
 
   function checkIfJokesExist(data) {
     if (!!data){
-      if(!!addJoke){
-        setJokes([...data, addJoke])
-      }else{
-        setJokes(data)
-      }
+      setJokes(data)
     }
 }
 
+function addJoke() {
+  let updatedJoke = [...jokes, addJoke]
+  setJokes(updatedJoke)
+
+}
 
     return (
         <div className="joke-container">   

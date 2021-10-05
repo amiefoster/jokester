@@ -91,10 +91,16 @@
       "id": 15
     },
     {
-      "setup": "What is the best time to go to the dentist?",
+      "setup": "",
+      "delivery": "",
+      "category": "",
+      "id": 16
+    },
+    {
+      "setup": "What's the best time to go to the Dentist?",
       "delivery": "Tooth: Hurty",
       "category": "Dad Joke",
-      "id": 16
+      "id": 17
     }
   ]
 }

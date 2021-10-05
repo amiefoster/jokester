@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 const linkStyles = {
     padding: "10px 20px 10px 20px",
     margin: "10px 10px 10px 10px",
-    background: "#c60112",
+    background: "#f1d302",
     textDecoration: "none",
     color: "white", 
     justifyContent: "center",
@@ -23,7 +23,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "rgb(198,1,18)",
+              background: "#235789",
               
             }}
             >
@@ -35,7 +35,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "#233DFF",
+              background: "#235789",
             }}
             >
                 Jokes
@@ -46,7 +46,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "#233DFF",
+              background: "#235789",
             }}
             >
               Create
