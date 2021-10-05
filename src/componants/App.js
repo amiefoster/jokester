@@ -10,7 +10,7 @@ function App() {
   const [addJoke, setAddJoke] = useState()
 
 
-  function addNewJoke(newJoke) {
+  function sendNewJoke(newJoke) {
     setAddJoke(newJoke)
   }
 
