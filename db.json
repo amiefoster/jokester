@@ -91,16 +91,22 @@
       "id": 15
     },
     {
-      "category": "",
-      "setup": "sha\n\n",
-      "delivery": "",
+      "setup": "How ",
+      "delivery": "what",
+      "category": "funny",
       "id": 16
     },
     {
-      "category": "sss",
-      "setup": "sha\n\n",
-      "delivery": "",
+      "setup": "What is the best time to go to the dentist?",
+      "delivery": "Tooth: hurty",
+      "category": "Dad Joke",
       "id": 17
+    },
+    {
+      "setup": "d",
+      "delivery": "d",
+      "category": "Dad Joke",
+      "id": 18
     }
   ]
 }
