@@ -2,7 +2,8 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import JokeCard from './JokeCard'
 
-export default function JokeContainer({addJoke}) {
+
+function JokeContainer({addJoke}) {
     const [jokes, setJokes] = useState([])
 
   useEffect(() => {
@@ -12,14 +13,15 @@ export default function JokeContainer({addJoke}) {
   }, [])
 
   function checkIfJokesExist(data) {
-        if (!!data){
-          if(!!addJoke){
-            setJokes([...data, addJoke])
-          }else if (!addJoke){
-            setJokes(data)
-          }
-        }
-  }
+    if (!!data){
+      if(!!addJoke){
+        setJokes([...data, addJoke])
+      }else{
+        setJokes(data)
+      }
+    }
+}
+
 
     return (
         <div className="joke-container">   
@@ -34,3 +36,4 @@ export default function JokeContainer({addJoke}) {
         </div>
     )
 }
+export default JokeContainer;

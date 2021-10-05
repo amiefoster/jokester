@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-function SubmitJoke({addNewJoke}) {
+
+function SubmitJoke({sendNewJoke}) {
 
   const [formData, setFormData] = useState({
     "category": "",
@@ -29,7 +30,14 @@ function SubmitJoke({addNewJoke}) {
       "category": formData.category
     })
   }).then(response => response.json())
-    .then(newJoke => addNewJoke(newJoke));
+
+    .then(newJoke => sendNewJoke(newJoke))
+    setFormData({
+      "category": "",
+      "setup": "",
+      "delivery": ""
+    })
+
   }
 
   return (

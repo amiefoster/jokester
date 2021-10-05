@@ -89,24 +89,7 @@
       "setup": "What happens when you witness a ship wreck?",
       "delivery": "You let it sink in.",
       "id": 15
-    },
-    {
-      "setup": "How ",
-      "delivery": "what",
-      "category": "funny",
-      "id": 16
-    },
-    {
-      "setup": "What is the best time to go to the dentist?",
-      "delivery": "Tooth: hurty",
-      "category": "Dad Joke",
-      "id": 17
-    },
-    {
-      "setup": "d",
-      "delivery": "d",
-      "category": "Dad Joke",
-      "id": 18
     }
+    
   ]
 }
