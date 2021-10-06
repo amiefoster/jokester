@@ -30,6 +30,7 @@ code {
   border-radius: 25px;
   border: rgba(40,87,137,1);
   border-style: solid;
+  background-color: white;
 
 }
 
@@ -77,11 +78,13 @@ code {
   transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
   height: 250px;
   width: 200px;
+  opacity: 1;
 }
 
 .card:hover {
   --translate-y: -2px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  opacity: 1;
 }
 
 .card.flip {
