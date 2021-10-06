@@ -83,7 +83,96 @@
       "setup": "What happens when you witness a ship wreck?",
       "delivery": "You let it sink in.",
       "id": 15
+    },
+    {
+      "setup": "Yo mama's so stupid",
+      "delivery": "She stared at a cup of orange juice for 12 hours because it said \"concentrate.\"",
+      "category": "Yo Momma Jokes",
+      "id": 16
+    },
+    {
+      "setup": "Yo mama's so stupid when they said it was chilly outside",
+      "delivery": "she grabbed a bowl.",
+      "category": "Yo Momma Jokes",
+      "id": 17
+    },
+    {
+      "setup": "Yo mama's so stupid,",
+      "delivery": "she went to the dentist to get a Bluetooth.\n",
+      "category": "Yo Momma Jokes",
+      "id": 18
+    },
+    {
+      "setup": "Yo mama's so ugly,",
+      "delivery": "when she was little, she had to trick-or-treat by phone.",
+      "category": "Yo Momma Jokes",
+      "id": 19
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nAnnie\nAnnie who?",
+      "delivery": "Annie thing you can do I can better!",
+      "category": "Knock-Knock Jokes",
+      "id": 20
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nWa\nWa who?",
+      "delivery": "What are you so excited about?!",
+      "category": "Knock-Knock Jokes",
+      "id": 21
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nHike\nHike who?",
+      "delivery": "I didn’t know you liked Japanese poetry!",
+      "category": "Knock-Knock Jokes",
+      "id": 22
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nIce cream soda \nIce cream soda who?",
+      "delivery": "Ice scream soda people can hear me!\n",
+      "category": "Knock-Knock Jokes",
+      "id": 23
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nCandice \nCandice who?\n",
+      "delivery": "Candice joke get any worse?!\n",
+      "category": "Knock-Knock Jokes",
+      "id": 24
+    },
+    {
+      "setup": "Knock, knock\nWho’s there?\nCargo\nCargo who?",
+      "delivery": "Cargo beep, beep and vroom, vroom!\n",
+      "category": "Knock-Knock Jokes",
+      "id": 25
+    },
+    {
+      "setup": " My wife told me to stop impersonating a flamingo. ",
+      "delivery": "I had to put my foot down",
+      "category": "One Liners",
+      "id": 26
+    },
+    {
+      "setup": "I went to buy some camo pants",
+      "delivery": "but i couldnt find any\n",
+      "category": "One Liners",
+      "id": 27
+    },
+    {
+      "setup": "I was wondering why the frisbee kept getting bigger and bigger, ",
+      "delivery": "but then it hit me",
+      "category": "One Liners",
+      "id": 28
+    },
+    {
+      "setup": "The problem with kleptomaniacs is ",
+      "delivery": "they always take things literally.\n\n",
+      "category": "One Liners",
+      "id": 29
+    },
+    {
+      "setup": "Most people are shocked",
+      "delivery": "when they find out how bad I am as an electrician.",
+      "category": "One Liners",
+      "id": 30
     }
-    
   ]
 }

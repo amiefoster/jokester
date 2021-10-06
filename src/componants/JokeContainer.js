@@ -6,6 +6,7 @@ import JokeCard from './JokeCard'
 function JokeContainer({addJoke}) {
     const [jokes, setJokes] = useState([])
     const [filteredCategory, setFilteredCategory] = useState("All")
+    //set state for filter and toggle true/ false
 
   useEffect(() => {
     fetch('http://localhost:8000/jokes')

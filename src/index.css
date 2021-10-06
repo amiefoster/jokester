@@ -21,7 +21,7 @@ code {
 
 /* JOKE FORM */
 .joke-form {
-  padding: 30px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   margin-left: 25%;
   margin-right: 25%;
   display: flex;
@@ -34,14 +34,16 @@ code {
 
 }
 
+.joke-form h3 {
+  margin: 5px;
+}
 
 .joke-form textarea {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 0.5em;
-  min-width: 50px;
   border-radius: 10px;
   border-color: rgba(40,87,137,1);
+  
 }
 
 .joke-form select {
