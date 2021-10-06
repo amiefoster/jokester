@@ -43,7 +43,34 @@ code {
   background-color: #f1d302;
   color: white;
 
+
 }
+
+/* PULSE ON BUTTON */
+.add-joke-button:hover{
+  border-style: none;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 white;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 5px white;
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 white;
+	}
+}
+/* END PULSE ON BUTTON */
 
 .joke-submit {
   justify-content: center;

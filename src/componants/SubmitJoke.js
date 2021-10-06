@@ -45,7 +45,7 @@ function SubmitJoke({sendNewJoke}) {
       <h4>Submit Your Own Joke Here!</h4>
 
       <section className="joke-submit">
-        <h3>Add Joke</h3>
+        
         <form className="joke-form">
           <label>
             {"Setup:  "}
