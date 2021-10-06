@@ -5,6 +5,7 @@ import JokeCard from './JokeCard'
 
 function JokeContainer({addJoke}) {
     const [jokes, setJokes] = useState([])
+    const [filteredCategory, setFilteredCategory] = useState("All")
 
   useEffect(() => {
     fetch('http://localhost:8000/jokes')
@@ -24,16 +25,22 @@ function addJoke() {
 
 }
 
+function updateFilteredJokes(chosenCategory) {
+  setFilteredCategory(chosenCategory)
+  
+}
+
     return (
         <div 
           className="joke-container"
           className="card-grid">   
-             {jokes.map((joke) => {
+             {jokes.filter(joke => filteredCategory === "All" ? true : joke.category === filteredCategory).map((joke) => {
                 return <JokeCard 
                     key={joke.id} 
                     category={joke.category} 
                     setup={joke.setup} 
-                    delivery={joke.delivery}/>
+                    delivery={joke.delivery}
+                    updateFilteredJokes={updateFilteredJokes}/>
             })}
             
         </div>

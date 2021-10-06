@@ -54,7 +54,7 @@ function SubmitJoke({sendNewJoke}) {
               name="setup"
               placeholder="Setup"
               rows={3}
-              cols={40}
+              
               value={formData.setup}
               onChange={handleChange}
             />
@@ -67,20 +67,25 @@ function SubmitJoke({sendNewJoke}) {
               name="delivery"
               placeholder="Delivery"
               rows={3}
-              cols={40}
+              
               value={formData.delivery}
               onChange={handleChange}
             />
           </label>
           <br />
-          <label>
+
+          <label >
             {"Category:  "}
-            <input 
-            type="text" 
-            name="category" 
-            value={formData.category}
-            onChange={handleChange} />
+            <select name="category" onChange={handleChange}>
+              <option></option>
+              <option value="Dad Jokes">Dad Jokes</option>
+              <option value="Yo Momma Jokes">Yo Momma Jokes</option>
+              <option value="Knock-Knock Jokes">Knock-Knock Jokes</option>
+              <option value="One Liners">One Liners</option>
+              <option value="General">General</option>
+            </select>
           </label>
+
           <br />
           <button
             className="add-joke-button"

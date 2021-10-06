@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -31,6 +31,22 @@ code {
   border: rgba(40,87,137,1);
   border-style: solid;
   background-color: white;
+
+}
+
+
+.joke-form textarea {
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5em;
+  min-width: 50px;
+  border-radius: 10px;
+  border-color: rgba(40,87,137,1);
+}
+
+.joke-form select {
+  border-radius: 10px;
+  border-color: rgba(40,87,137,1);
 
 }
 
@@ -105,7 +121,6 @@ code {
   transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
   height: 250px;
   width: 200px;
-  opacity: 1;
 }
 
 .card:hover {
@@ -116,10 +131,12 @@ code {
 
 .card.flip {
   --rotate-y: 180deg;
+  
 }
 
 .card .front {
   left: 0;
+  
 }
 
 .card .front,
@@ -127,33 +144,32 @@ code {
   position: absolute;
   padding: 1rem;
   backface-visibility: hidden;
+
 }
 
 .card .back {
   transform: rotateY(180deg);
+  
+}
+
+.card .back p {
+  max-width: 75px;
 }
 
 /* END CARD FLIP */
 
 
-/* OLD JOKE CARD STYLING
-
-.joke-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 25px;
-  justify-content: center;
+.filtered-category {
+  color: #59c5f1 ;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.filtered-category:hover{
+  color: #f1d302;
+  cursor: alias;
 }
 
-  .joke-card {
-  border-style: solid;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-  background-color: #ADD8E6;
-  border-style: hidden;
-}
 
- */
+
+
 
