@@ -71,8 +71,8 @@ function SubmitJoke({ sendNewJoke }) {
 
           <label>
             <h3>{"Category:  "}</h3>
-            <select name="category" onChange={handleChange}>
-              <option></option>
+            <select name="category" value={formData.category}onChange={handleChange}>
+              <option value=""></option>
               <option value="Dad Jokes">Dad Jokes</option>
               <option value="Yo Momma Jokes">Yo Momma Jokes</option>
               <option value="Knock-Knock Jokes">Knock-Knock Jokes</option>

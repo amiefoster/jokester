@@ -92,7 +92,7 @@
     },
     {
       "setup": "Yo mama's so stupid when they said it was chilly outside",
-      "delivery": "she grabbed a bowl.",
+      "delivery": "She grabbed a bowl.",
       "category": "Yo Momma Jokes",
       "id": 17
     },
@@ -104,7 +104,7 @@
     },
     {
       "setup": "Yo mama's so ugly,",
-      "delivery": "when she was little, she had to trick-or-treat by phone.",
+      "delivery": "When she was little, she had to trick-or-treat by phone.",
       "category": "Yo Momma Jokes",
       "id": 19
     },
@@ -152,27 +152,39 @@
     },
     {
       "setup": "I went to buy some camo pants",
-      "delivery": "but i couldnt find any\n",
+      "delivery": "But i couldnt find any\n",
       "category": "One Liners",
       "id": 27
     },
     {
       "setup": "I was wondering why the frisbee kept getting bigger and bigger, ",
-      "delivery": "but then it hit me",
+      "delivery": "But then it hit me",
       "category": "One Liners",
       "id": 28
     },
     {
       "setup": "The problem with kleptomaniacs is ",
-      "delivery": "they always take things literally.\n\n",
+      "delivery": "They always take things literally.\n\n",
       "category": "One Liners",
       "id": 29
     },
     {
       "setup": "Most people are shocked",
-      "delivery": "when they find out how bad I am as an electrician.",
+      "delivery": "When they find out how bad I am as an electrician.",
       "category": "One Liners",
       "id": 30
+    },
+    {
+      "setup": "What's a ghost's favorite dessert? ",
+      "delivery": "I-Scream!",
+      "category": "Dad Jokes",
+      "id": 31
+    },
+    {
+      "setup": "Whats the best time to go to the dentist?",
+      "delivery": "Tooth: Hurty",
+      "category": "Dad Jokes",
+      "id": 32
     }
   ]
 }
