@@ -48,12 +48,12 @@ function SubmitJoke({sendNewJoke}) {
         
         <form className="joke-form">
           <label>
-            {"Setup:  "}
+            <h3>{"Setup:  "}</h3>
             <textarea
               type="text"
               name="setup"
               placeholder="Setup"
-              rows={3}
+              rows={5}
               
               value={formData.setup}
               onChange={handleChange}
@@ -61,12 +61,12 @@ function SubmitJoke({sendNewJoke}) {
           </label>
           <br />
           <label>
-            {"Delivery:  "}
+            <h3>{"Delivery:  "}</h3>
             <textarea
               type="text"
               name="delivery"
               placeholder="Delivery"
-              rows={3}
+              rows={5}
               
               value={formData.delivery}
               onChange={handleChange}
@@ -75,7 +75,7 @@ function SubmitJoke({sendNewJoke}) {
           <br />
 
           <label >
-            {"Category:  "}
+            <h3>{"Category:  "}</h3>
             <select name="category" onChange={handleChange}>
               <option></option>
               <option value="Dad Jokes">Dad Jokes</option>
