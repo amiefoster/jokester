@@ -4,8 +4,8 @@ function Home() {
     return(
         <div>
             <br/>
-            <h3>Hi 👋  welcome to Jokester!</h3>
-            <img src={logo2} alt="logo"/>
+            <h3 className="welcome" >Hi 👋  welcome to Jokester!</h3>
+            <img src={logo2} alt="logo" />
             
             
         </div>

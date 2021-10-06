@@ -22,6 +22,7 @@ function NavBar() {
             to="/"
             exact
             style={linkStyles}
+            className="nav-bar-route"
             activeStyle={{
               background: "#235789",
               
@@ -34,6 +35,7 @@ function NavBar() {
             to="/jokes"
             exact
             style={linkStyles}
+            className="nav-bar-route"
             activeStyle={{
               background: "#235789",
             }}
@@ -45,6 +47,7 @@ function NavBar() {
             to="/create-joke"
             exact
             style={linkStyles}
+            className="nav-bar-route"
             activeStyle={{
               background: "#235789",
             }}
