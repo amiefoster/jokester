@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <br />
-      <h3 className="welcome">Hi 👋 welcome to Jokester!</h3>
+      <h3 className="welcome">Hi there, 👋 welcome!</h3>
       <img src={logo2} alt="logo" />
     </div>
   );
