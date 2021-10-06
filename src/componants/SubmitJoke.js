@@ -1,42 +1,40 @@
 import React, { useState } from "react";
 
-function SubmitJoke({sendNewJoke}) {
-
+function SubmitJoke({ sendNewJoke }) {
   const [formData, setFormData] = useState({
-    "category": "",
-     "setup": "",
-     "delivery": "",
-  })
-  
+    category: "",
+    setup: "",
+    delivery: "",
+  });
 
   function handleChange(event) {
     setFormData({
       ...formData,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-  fetch('http://localhost:8000/jokes',{
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      "setup": formData.setup,
-      "delivery":formData.delivery,
-      "category": formData.category
+    fetch("http://localhost:8000/jokes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        setup: formData.setup,
+        delivery: formData.delivery,
+        category: formData.category,
+      }),
     })
-  }).then(response => response.json())
+      .then((response) => response.json())
 
-    .then(newJoke => sendNewJoke(newJoke))
+      .then((newJoke) => sendNewJoke(newJoke));
     setFormData({
-      "category": "",
-      "setup": "",
-      "delivery": ""
-    })
-
+      category: "",
+      setup: "",
+      delivery: "",
+    });
   }
 
   return (
@@ -45,7 +43,6 @@ function SubmitJoke({sendNewJoke}) {
       <h4>Submit Your Own Joke Here!</h4>
 
       <section className="joke-submit">
-        
         <form className="joke-form">
           <label>
             <h3>{"Setup:  "}</h3>
@@ -54,7 +51,6 @@ function SubmitJoke({sendNewJoke}) {
               name="setup"
               placeholder="Setup"
               rows={5}
-              
               value={formData.setup}
               onChange={handleChange}
             />
@@ -67,14 +63,13 @@ function SubmitJoke({sendNewJoke}) {
               name="delivery"
               placeholder="Delivery"
               rows={5}
-              
               value={formData.delivery}
               onChange={handleChange}
             />
           </label>
           <br />
 
-          <label >
+          <label>
             <h3>{"Category:  "}</h3>
             <select name="category" onChange={handleChange}>
               <option></option>
@@ -91,7 +86,6 @@ function SubmitJoke({sendNewJoke}) {
             className="add-joke-button"
             type="submit"
             onClick={handleSubmit}
-        
           >
             Add Joke
           </button>

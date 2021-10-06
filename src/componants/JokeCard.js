@@ -1,10 +1,19 @@
 import { React, useState } from "react";
 
-function JokeCard({ category, setup, delivery, updateFilteredJokes }) {
+function JokeCard({
+  id,
+  category,
+  setup,
+  delivery,
+  updateFilteredJokes,
+  toggleCategory,
+  handleDeleteClick,
+}) {
   const [flip, setFlip] = useState(false);
 
   function handleFilterClick(event) {
     updateFilteredJokes(event.target.innerHTML);
+    toggleCategory();
   }
 
   return (
@@ -18,6 +27,9 @@ function JokeCard({ category, setup, delivery, updateFilteredJokes }) {
 
       <div className="back" onClick={() => setFlip(!flip)}>
         <p>{delivery}</p>
+        <button className="delete-button" onClick={() => handleDeleteClick(id)}>
+          🗑️
+        </button>
       </div>
     </div>
   );

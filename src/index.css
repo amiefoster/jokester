@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 body {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(0deg, rgba(40,87,137,1) 0%, rgba(0,212,255,1) 35%, rgb(255, 255, 255) 100%);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 87, 137, 1) 0%,
+    rgba(0, 212, 255, 1) 35%,
+    rgb(255, 255, 255) 100%
+  );
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
- 
 }
 
 code {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-bar {
   margin-top: 30px;
-
 }
 
 /* JOKE FORM */
@@ -28,10 +31,9 @@ code {
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
-  border: rgba(40,87,137,1);
+  border: rgba(40, 87, 137, 1);
   border-style: solid;
   background-color: white;
-
 }
 
 .joke-form h3 {
@@ -40,19 +42,17 @@ code {
 
 .joke-form textarea {
   font-size: 1.5em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  border-color: rgba(40,87,137,1);
-  
+  border-color: rgba(40, 87, 137, 1);
 }
 
 .joke-form select {
   border-radius: 10px;
-  border-color: rgba(40,87,137,1);
-
+  border-color: rgba(40, 87, 137, 1);
 }
 
-.add-joke-button{
+.add-joke-button {
   border-radius: 8px;
   border-style: none;
   width: 125px;
@@ -60,33 +60,30 @@ code {
   margin: 10px 20px 10px 20px;
   background-color: #f1d302;
   color: white;
-
-
 }
 
 /* PULSE ON BUTTON */
-.add-joke-button:hover{
+.add-joke-button:hover {
   border-style: none;
-	transform: scale(1);
-	animation: pulse 2s infinite;
-  
+  transform: scale(1);
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 white;
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 white;
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 5px white;
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px white;
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 white;
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 white;
+  }
 }
 /* END PULSE ON BUTTON */
 
@@ -95,7 +92,6 @@ code {
 }
 
 /* END JOKE FORM */
-
 
 /* CARD FLIP */
 
@@ -114,31 +110,30 @@ code {
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: .35rem;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5);
+  border-radius: 0.35rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
   background-color: ivory;
   transform-style: preserve-3d;
   transition: 150ms;
   cursor: pointer;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
   height: 250px;
   width: 200px;
 }
 
 .card:hover {
   --translate-y: -2px;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 
 .card.flip {
   --rotate-y: 180deg;
-  
 }
 
 .card .front {
   left: 0;
-  
 }
 
 .card .front,
@@ -146,12 +141,10 @@ code {
   position: absolute;
   padding: 1rem;
   backface-visibility: hidden;
-
 }
 
 .card .back {
   transform: rotateY(180deg);
-  
 }
 
 .card .back p {
@@ -160,18 +153,20 @@ code {
 
 /* END CARD FLIP */
 
-
 .filtered-category {
-  color: #59c5f1 ;
-  font-family: 'Roboto', sans-serif;
-  
+  color: #59c5f1;
+  font-family: "Roboto", sans-serif;
 }
-.filtered-category:hover{
+.filtered-category:hover {
   color: #f1d302;
   cursor: alias;
 }
 
+.delete-button {
+  border-style: none;
+}
 
-
-
-
+.delete-button:hover {
+  border-style: solid;
+  border-color: #f1d302;
+}
