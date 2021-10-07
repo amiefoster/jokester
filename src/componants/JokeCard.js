@@ -29,7 +29,7 @@ function JokeCard({
       <div className="back" onClick={() => setFlip(!flip)}>
         <p>{delivery}</p>
         <img src={trash} alt="trash can" className="delete-button" onClick={() => handleDeleteClick(id)}/>
-        {/* <button className="delete-button" onClick={() => handleDeleteClick(id)}>🗑️</button> */}
+        
       </div>
     </div>
   );
