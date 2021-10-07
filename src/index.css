@@ -187,7 +187,8 @@ code {
 
 .delete-button {
   border-style: none;
-  opacity: 1;
+  opacity: .5;
+  width: 30px;
   
 }
 
@@ -198,5 +199,6 @@ code {
   border-color: #f1d302;
   transform: scale(1);
   animation: pulse 2s infinite;
+  opacity: 1;
   /* background-color: rgba(247, 222, 90, .25); */
 }

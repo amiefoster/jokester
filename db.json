@@ -7,12 +7,6 @@
       "id": 1
     },
     {
-      "category": "Dad Joke",
-      "setup": "Why did the banana go see a doctor?",
-      "delivery": "Because it wasn't peeling well.",
-      "id": 2
-    },
-    {
       "category": "General",
       "setup": "What do you call a kid with no arms and an eyepatch?",
       "delivery": "Names.",
@@ -187,9 +181,9 @@
       "id": 32
     },
     {
-      "setup": "Why did the programmer quit his job?", 
+      "setup": "Why did the programmer quit his job?",
       "delivery": "Because he didnt get arrays.",
-      "category":"General",
+      "category": "General",
       "id": 33
     }
   ]
