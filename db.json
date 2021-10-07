@@ -68,12 +68,6 @@
     },
     {
       "category": "Dad Joke",
-      "setup": "What do you call a fly without wings?",
-      "delivery": "A walk!",
-      "id": 14
-    },
-    {
-      "category": "Dad Joke",
       "setup": "What happens when you witness a ship wreck?",
       "delivery": "You let it sink in.",
       "id": 15
