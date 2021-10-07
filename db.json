@@ -185,6 +185,12 @@
       "delivery": "Tooth: Hurty",
       "category": "Dad Jokes",
       "id": 32
+    },
+    {
+      "setup": "Why did the programmer quit his job?", 
+      "delivery": "Because he didnt get arrays.",
+      "category":"General",
+      "id": 33
     }
   ]
 }
