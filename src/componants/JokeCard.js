@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import trash from "../images/trash.png"
 
 function JokeCard({
   id,
@@ -27,7 +28,8 @@ function JokeCard({
 
       <div className="back" onClick={() => setFlip(!flip)}>
         <p>{delivery}</p>
-        <button className="delete-button" onClick={() => handleDeleteClick(id)}>🗑️</button>
+        <img src={trash} alt="trash can" className="delete-button" onClick={() => handleDeleteClick(id)}/>
+        {/* <button className="delete-button" onClick={() => handleDeleteClick(id)}>🗑️</button> */}
       </div>
     </div>
   );
